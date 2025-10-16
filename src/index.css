@@ -1,64 +1,80 @@
 @import "tailwindcss";
 
 :root {
-  /* --color-theme-bg: #black; */
+	/* --color-theme-bg: #black; */
 }
 
 @theme {
-  --font-sans: "Inter", sans-serif;
-  --font-mono: "Fira Code", monospace;
-  --color-theme-text: #26251e;
-  --color-theme-black-0: #26251e;
-  --color-theme-text-hover: color-mix(in oklab, #26251e 75%, transparent);
-  --color-theme-button-hover-bg: #3b3a33;
-  --color-theme-bg: #f7f7f4;
-  --color-theme-text: #26251e;
-  --color-theme-card-hex: #f2f1ed;
-  --color-theme-border: color-mix(in oklab, #26251e 20%, transparent);
-  --color-theme-border-05: color-mix(in oklab, #26251e 5%, transparent);
+	--font-sans: "Inter", sans-serif;
+	--font-mono: "Fira Code", monospace;
+	--color-theme-text: #26251e;
+	--color-theme-acent: #f54e00;
+	--color-theme-black-0: #26251e;
+	--color-theme-text-hover: color-mix(in oklab, #26251e 75%, transparent);
+	--color-theme-button-hover-bg: #3b3a33;
+	--color-theme-bg: #f7f7f4;
+	--color-theme-text: #26251e;
+	--color-theme-text-sec: color-mix(in oklab, #26251e 60%, transparent);
+	--color-theme-card-hex: #f2f1ed;
+	--color-theme-border: color-mix(in oklab, #26251e 20%, transparent);
+	--color-theme-border-05: color-mix(in oklab, #26251e 5%, transparent);
+	--color-theme-border-02: color-mix(in oklab, #26251e 2%, transparent);
 
-  --shadow-subnav: 0 0 1rem #00000005, 0 0 0.5rem #00000002;
-  /* 布局 */
-  --button-padding-sm: 0.4rem 0.75rem;
+	--shadow-subnav: 0 0 1rem #00000005, 0 0 0.5rem #00000002;
+	/* 布局 */
+	--button-padding-sm: 0.4rem 0.75rem;
 }
-
+@media (max-width: 899px) {
+	:root {
+		font-size: 0.975rem;
+	}
+}
 @layer base {
-  body {
-    box-sizing: border-box;
-    min-height: 100vh;
-  }
+	body {
+		box-sizing: border-box;
+		min-height: 100vh;
+	}
 
-  a {
-    text-decoration: none;
-  }
+	a {
+		text-decoration: none;
+	}
 
-  * {
-    box-sizing: border-box;
-  }
+	* {
+		box-sizing: border-box;
+	}
 }
 
 @layer components {
-  .nav_link {
-    @apply text-[#26251e] group-hover/link:text-[var(--color-theme-text-hover)]  hover:text-[var(--color-theme-text-hover)] text-sm;
-    padding-inline: 0.75rem;
-    padding-block: 0.25rem;
-  }
-  .subnav_link {
-    @apply text-[#26251e] hover:text-[var(--color-theme-text-hover)]  text-sm;
-    padding-inline: 0.75rem;
-    padding-block: 0.25rem;
-  }
-  .btn {
-    @apply rounded-full bg-theme-black-0  text-theme-bg  text-sm leading-3.5 p-[var(--button-padding-sm)] hover:bg-theme-button-hover-bg cursor-pointer;
-  }
-  .btn_ghost {
-    @apply rounded-full bg-transparent border-theme-border text-theme-text  text-sm leading-3.5 p-[var(--button-padding-sm)] hover:bg-theme-card-hex  border-[1px];
-  }
+	.nav_link {
+		@apply text-[#26251e] group-hover/link:text-[var(--color-theme-text-hover)]  hover:text-[var(--color-theme-text-hover)] text-sm;
+		padding-inline: 0.75rem;
+		padding-block: 0.25rem;
+	}
+	.subnav_link {
+		@apply text-[#26251e] hover:text-[var(--color-theme-text-hover)]  text-sm;
+		padding-inline: 0.75rem;
+		padding-block: 0.25rem;
+	}
+	.btn {
+		@apply rounded-full bg-theme-black-0  text-theme-bg  text-sm leading-3.5 p-[var(--button-padding-sm)] hover:bg-theme-button-hover-bg cursor-pointer;
+	}
+	.btn_ghost {
+		@apply rounded-full bg-transparent border-theme-border text-theme-text  text-sm leading-3.5 p-[var(--button-padding-sm)] hover:bg-theme-card-hex  border-[1px];
+	}
 }
 @layer utilities {
-  .container {
-    max-width: 1300px;
-    width: 100%;
-    /* margin-inline: auto; */
-  }
+	.container {
+		max-width: 1300px;
+		width: 100%;
+
+		/* margin-inline: auto; */
+	}
+	.section {
+		padding: 4.2rem 1.25rem;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.section:first-child {
+		padding-top: 7rem;
+	}
 }
