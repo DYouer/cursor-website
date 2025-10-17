@@ -5,6 +5,8 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import LogoGarden from "./components/Logogarden";
 import Chapter from "./components/Chapter";
+import UserComment from "./components/UserComment";
+import Feature from "./components/Feature";
 
 function App() {
 	return (
@@ -29,6 +31,8 @@ function App() {
 					description='Cursor 出现在 GitHub 审阅你的 PR，在 Slack 中作为队友，以及你工作的任何其他地方。'
 					btnTitle='了解 Cursor 的生态系统'
 				/>
+				<UserComment />
+				<Feature />
 			</main>
 		</AppLayout>
 	);
