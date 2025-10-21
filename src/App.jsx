@@ -7,7 +7,8 @@ import LogoGarden from "./components/Logogarden";
 import Chapter from "./components/Chapter";
 import UserComment from "./components/UserComment";
 import Feature from "./components/Feature";
-import Update from "./components/Update";
+import JoinUs from "./components/JoinUs";
+import Download from "./components/Download";
 
 function App() {
   return (
@@ -34,7 +35,8 @@ function App() {
         />
         <UserComment />
         <Feature />
-        <Update />
+        <JoinUs />
+        <Download />
       </main>
     </AppLayout>
   );
