@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <defs>
+    <symbol id="computer" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.5 16h-5v4.5h5V16Z"/>
+      <path stroke="#333" stroke-width="2" d="M20.5 4h-17a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h17a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1Z"/>
+      <path stroke="#333" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 13.5h2m-6 7h10"/>
+    </symbol>
+    <symbol id="lightmode" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <g clip-path="url(#a)">
+        <path stroke="#333" stroke-linejoin="round" stroke-width="2" d="M12 18.5a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Z"/>
+        <path fill="#333" d="M12 3a1.25 1.25 0 1 0 0-2.5A1.25 1.25 0 0 0 12 3Zm7.25 3a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm3 7.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm-3 7.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm-7.25 3a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm-7.25-3a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm-3-7.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm3-7.25a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z"/>
+      </g>
+      <defs>
+        <clipPath id="a">
+          <path fill="#fff" d="M0 0h24v24H0z"/>
+        </clipPath>
+      </defs>
+    </symbol>
+    <symbol id="darkmode" width="24" height="24" fill="none" viewBox="0 0 24 24">
+      <path stroke="#333" stroke-linejoin="round" stroke-width="2" d="M14.026 2.205a6.364 6.364 0 1 0 7.768 7.768c.135.655.206 1.333.206 2.027 0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2c.694 0 1.372.07 2.026.205Z"/>
+    </symbol>
+  </defs>
+</svg>
