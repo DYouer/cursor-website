@@ -1,4 +1,7 @@
+import { useOS } from "../hook/useOS";
+
 export default function Section1() {
+	const os = useOS();
 	return (
 		<section className='container section mx-auto bg-theme-bg '>
 			<div className='max-w-[65ch] mb-[56px]'>
@@ -10,7 +13,7 @@ export default function Section1() {
 						href='#'
 						className='btn text-base p-[0.8rem_1.35rem] leading-[1] inline-flex items-center '
 					>
-						为 Linux 下载<span className='ps-1 font-sans'>⤓</span>
+						为 {os} 下载<span className='ps-1 font-sans'>⤓</span>
 					</a>
 				</div>
 			</div>

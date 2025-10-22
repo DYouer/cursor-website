@@ -1,6 +1,5 @@
 // import { use } from "react";
 import { useOS } from "../hook/useOS";
-import Icon from "./Icon";
 
 export default function Download() {
 	const os = useOS();
@@ -15,11 +14,6 @@ export default function Download() {
 					为 {os} 下载<span className='ps-1 font-sans'>⤓</span>
 				</a>
 			</div>
-			<span class='' aria-hidden='true'>
-				<Icon name='computer' />
-				<Icon name='lightmode' />
-				<Icon name='darkmode' size={14} />
-			</span>
 		</section>
 	);
 }
