@@ -53,8 +53,8 @@ const link = [
 ];
 export default function Footer() {
 	return (
-		<footer className=' bg-theme-card-hex pt-16 '>
-			<div className='container mx-auto grid grid-cols-5 px-2 text-sm'>
+		<footer className=' bg-theme-card-hex pt-16 px-4'>
+			<div className='container mx-auto grid grid-cols-3 md:grid-cols-5 px-2 text-sm'>
 				{link.map(item => (
 					<div key={item.title} className='flex flex-col gap-3 mb-24'>
 						<h4 className='text-theme-text-sec'>{item.title}</h4>
@@ -84,7 +84,7 @@ export default function Footer() {
 					<p className='text-sm text-theme-text-sec'>
 						&copy; 2024 Cursor. 保留所有权利。
 					</p>
-					<div>
+					<div className='flex gap-2 items-stretch'>
 						<SwitchMode />
 						<SelectLang />
 					</div>
