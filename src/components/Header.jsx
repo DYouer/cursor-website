@@ -4,6 +4,7 @@ import logoAnimationMov from "../assets/logo-light-theme.mov";
 import logoAnimationWebm from "../assets/logo-light-theme.webm";
 import logoAnimationMp4 from "../assets/logo-light-theme.mp4";
 import { useState, useCallback, useRef } from "react";
+import { Link } from "react-router";
 
 export default function Header() {
 	const [logoHover, setLogoHover] = useState(false);
@@ -87,9 +88,9 @@ export default function Header() {
 							</a>
 						</li>
 						<li>
-							<a href='#' className='nav_link'>
+							<Link to='/pricing' className='nav_link'>
 								定价
-							</a>
+							</Link>
 						</li>
 						<li
 							className='relative group/link'
